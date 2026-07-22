@@ -115,6 +115,7 @@
       ensureAudio();
       endTime = Date.now() + remaining;
       running = true;
+      if (typeof window.gtag === "function") window.gtag("event", "tool_use", { action: "start" });
       setStartLabel("Pause");
       ticker = setInterval(tick, 100);
       render();
@@ -171,6 +172,7 @@
       if (running) return;
       startAt = Date.now() - elapsed;
       running = true;
+      if (typeof window.gtag === "function") window.gtag("event", "tool_use", { action: "start" });
       setStartLabel("Pause");
       ticker = setInterval(tick, 39);
     }
@@ -287,6 +289,7 @@
       stopAlarm(); ensureAudio();
       endTime = Date.now() + remaining;
       running = true;
+      if (typeof window.gtag === "function") window.gtag("event", "tool_use", { action: "start" });
       setStartLabel("Pause");
       ticker = setInterval(tick, 100);
       render();
