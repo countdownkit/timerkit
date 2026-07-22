@@ -1,0 +1,72 @@
+{
+  "timers": [
+    {
+      "slug": "timer",
+      "kind": "countdown",
+      "custom": true,
+      "seconds": 300,
+      "name": "Timer",
+      "h1": "Online Timer",
+      "blurb": "A free online countdown timer that runs right in your browser. Set any number of hours, minutes, and seconds, hit Start, and it counts down to zero — then flashes and beeps so you don't miss it.",
+      "tip": "Nothing to install and no account: the timer keeps accurate time from the moment you start it, even if the tab loses focus, because it counts against the real clock rather than ticking blindly."
+    },
+    {
+      "slug": "countdown-timer",
+      "kind": "countdown",
+      "custom": true,
+      "seconds": 600,
+      "name": "Countdown Timer",
+      "h1": "Countdown Timer",
+      "blurb": "A simple, full-screen countdown timer. Type in a duration, press Start, and watch the big digital display tick down to 00:00 with an alarm at the end.",
+      "tip": "Use the quick +1:00 and +5:00 buttons to stretch the time without stopping, and toggle the alarm sound off if you just want a silent visual countdown."
+    },
+    {
+      "slug": "egg-timer",
+      "kind": "countdown",
+      "custom": true,
+      "seconds": 360,
+      "name": "Egg Timer",
+      "h1": "Egg Timer",
+      "blurb": "An online egg timer for perfectly boiled eggs. It starts at 6 minutes — a good medium-boiled default — but you can set any time you like and it will beep the moment your eggs are done.",
+      "tip": "Rough guide: about 4 minutes for soft-boiled, 6 for medium, and 9–10 for hard-boiled from boiling water. Set the minutes and start it as you drop the eggs in."
+    },
+    {
+      "slug": "interval-timer",
+      "kind": "interval",
+      "work": 45,
+      "break": 15,
+      "rounds": 8,
+      "workLabel": "Work",
+      "breakLabel": "Rest",
+      "name": "Interval Timer",
+      "h1": "Interval Timer (HIIT)",
+      "blurb": "A repeating interval timer for HIIT, Tabata, and circuit workouts. It alternates a work period and a rest period for a set number of rounds, announcing each switch with a beep so you can keep your eyes off the screen.",
+      "tip": "Set your work and rest lengths and the number of rounds, then start. The round counter shows exactly where you are, and Skip jumps to the next interval if you finish early."
+    }
+  ],
+  "presetMinutes": [1, 2, 3, 5, 10, 15, 20, 30, 45, 60],
+  "special": [
+    {
+      "slug": "stopwatch",
+      "kind": "stopwatch",
+      "name": "Stopwatch",
+      "h1": "Online Stopwatch",
+      "blurb": "A free online stopwatch that counts up in minutes, seconds, and hundredths. Start, stop, and record laps — handy for timing workouts, cooking steps, study sprints, or anything you need to measure.",
+      "tip": "The Lap button freezes a split without stopping the clock, so you can capture each interval and compare them afterwards. Everything runs locally in your browser."
+    },
+    {
+      "slug": "pomodoro-timer",
+      "kind": "interval",
+      "work": 1500,
+      "break": 300,
+      "longBreak": 900,
+      "rounds": 4,
+      "workLabel": "Focus",
+      "breakLabel": "Break",
+      "name": "Pomodoro Timer",
+      "h1": "Pomodoro Timer",
+      "blurb": "A Pomodoro timer for focused work: 25 minutes of focus followed by a 5-minute break, repeating for four rounds with a longer break at the end. The round counter tracks your cycle and a beep marks every switch.",
+      "tip": "The Pomodoro Technique breaks work into short, timed sprints with deliberate breaks. Adjust the focus and break lengths if 25/5 isn't your rhythm — the timer keeps the pattern going automatically."
+    }
+  ]
+}
