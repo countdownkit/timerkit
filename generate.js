@@ -58,7 +58,7 @@ function layout({ title, desc, urlPath, h1, body }) {
 </main>
 <footer class="site-foot"><div class="wrap">
   <a href="${BASE}/">Home</a><a href="${BASE}/#timers">Timers</a><a href="${BASE}/#presets">Preset timers</a><a href="${BASE}/#stopwatch">Stopwatch &amp; Pomodoro</a>
-  <span>· ${SITE} — free online timers, stopwatch, and Pomodoro. No downloads, no signup: everything runs in your browser. Part of <a href="https://elevatedprogress.com/">Elevated Progress</a>.</span>
+  <span>· ${SITE} — free online timers, stopwatch, and Pomodoro. No downloads, no signup: everything runs in your browser. Part of <a href="https://elevatedprogress.com/">Elevated Progress</a>. · <a href="https://elevatedprogress.com/privacy/">Privacy Policy</a></span>
 </div></footer>
 <script src="${BASE}/timer.js"></script>
 <script src="${BASE}/tool.js" defer></script>
