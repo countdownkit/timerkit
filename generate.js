@@ -58,7 +58,7 @@ function layout({ title, desc, urlPath, h1, body }) {
 </main>
 <footer class="site-foot"><div class="wrap">
   <a href="${BASE}/">Home</a><a href="${BASE}/#timers">Timers</a><a href="${BASE}/#presets">Preset timers</a><a href="${BASE}/#stopwatch">Stopwatch &amp; Pomodoro</a>
-  <span>· ${SITE} — free online timers, stopwatch, and Pomodoro. No downloads, no signup: everything runs in your browser. Part of <a href="https://elevatedprogress.com/">Elevated Progress</a>. · <a href="https://elevatedprogress.com/privacy/">Privacy Policy</a></span>
+  <span>· ${SITE} — free online timers, stopwatch, and Pomodoro. No downloads, no signup: everything runs in your browser. Part of <a href="https://elevatedprogress.com/">Elevated Progress</a>. · <a href="https://elevatedprogress.com/about/">About</a> · <a href="https://elevatedprogress.com/contact/">Contact</a> · <a href="https://elevatedprogress.com/privacy/">Privacy Policy</a></span>
 </div></footer>
 <script src="${BASE}/timer.js"></script>
 <script src="${BASE}/tool.js" defer></script>
@@ -249,7 +249,22 @@ for (const p of DATA.special) {
   <h2 id="stopwatch">Stopwatch &amp; Pomodoro</h2>
   ${grid(SPECIAL_LINKS)}
   <div class="ad-slot">Advertisement</div>
-  <div class="prose"><p>These are working tools, not articles: the timer you see on each page is the one that runs. Timing is computed against your device clock rather than counted tick-by-tick, so a five-minute timer really lasts five minutes even if the tab drops to the background. The end-of-timer alarm is synthesized in the browser — there's no audio file to load and nothing leaves your device.</p></div>`;
+  <div class="prose"><p>These are working tools, not articles: the timer you see on each page is the one that runs. Timing is computed against your device clock rather than counted tick-by-tick, so a five-minute timer really lasts five minutes even if the tab drops to the background. The end-of-timer alarm is synthesized in the browser — there's no audio file to load and nothing leaves your device.</p></div>
+  <h2>How to use the timers</h2>
+  <div class="prose">
+    <p><b>Countdown timer.</b> Open the main timer and type the hours, minutes, and seconds you need, or jump to a ready-made preset like the 5-minute or 20-minute timer. Press Start and the large display counts down to zero; Pause holds it, and Reset returns it to the time you set. If you're running short, the +1:00 and +5:00 buttons add time without stopping the count. At zero the display flashes and an alarm beeps until you press Stop alarm — or uncheck the alarm box for a silent, visual-only countdown.</p>
+    <p><b>Stopwatch.</b> The stopwatch counts up instead of down. Start it to begin timing, tap Lap to record a split without breaking the clock — handy for comparing sets, laps, or rounds — and Reset to clear everything and start over.</p>
+    <p><b>Pomodoro and interval timers.</b> The Pomodoro timer runs 25 minutes of focus followed by a 5-minute break, repeating for four rounds with a longer break at the end; a round counter shows where you are and a beep marks each switch. The interval timer works the same way for HIIT, Tabata, and circuit workouts, alternating a work and a rest period for as many rounds as you set. Both let you change the work and break lengths if the defaults aren't your rhythm, and Skip jumps to the next interval when you finish early.</p>
+    <p>In practice people reach for these to boil eggs and watch a pot of pasta, run stretching or high-intensity intervals hands-free, keep study sessions honest with the Pomodoro method, and hold talks or exams to a strict time. Because every timer is measured against your device's clock rather than counted tick by tick, it stays accurate even if you switch to another tab, and the time remaining appears in the browser tab title so you can glance at it while you work in another window.</p>
+  </div>
+  <h2>Frequently asked questions</h2>
+  <div class="prose">
+    <p><b>Will the alarm sound if I switch to another tab?</b><br>Yes. Once you've pressed Start, the timer keeps running when the tab isn't in front, and the alarm beeps when it reaches zero. Keep the tab open rather than closing it — a closed tab has nothing left to ring.</p>
+    <p><b>Does it keep accurate time in the background?</b><br>It does. The countdown is worked out from your device's clock — the gap between now and the end time — instead of adding up ticks that a background tab would slow down. A 10-minute timer lasts 10 minutes whether or not the tab stays in view.</p>
+    <p><b>Can I turn the alarm off?</b><br>Yes. Uncheck "Alarm sound when the timer ends" and the timer runs silently, flashing the display at zero without any beep. You can toggle it before you start or leave it on and press Stop alarm once it rings.</p>
+    <p><b>What is the Pomodoro Technique?</b><br>It's a focus method that splits work into short timed sprints — classically 25 minutes — each followed by a short break, with a longer break after several rounds. The running countdown makes it easier to start a task and to hold off distractions until the break.</p>
+    <p><b>Do I need to install anything or sign up?</b><br>No. Everything runs in your browser with no download and no account. There are no audio files either — the alarm is generated by the browser itself, so nothing is sent anywhere.</p>
+  </div>`;
   writePage(`/`, layout({ title, desc, urlPath: `/`, h1: `Free Online Timer`, body }));
 }
 
